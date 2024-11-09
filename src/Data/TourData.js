@@ -68,6 +68,20 @@ const data = [
         info: "A sacred city for Hindus, believed to be the birthplace of Lord Ram. Known for its spiritual ambience, Ayodhya hosts many temples and offers a serene experience for pilgrims.",
         image: "https://upload.wikimedia.org/wikipedia/commons/d/df/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg",
         price: "$100"
+    },
+    {
+        id: 10,
+        name: "Manali",
+        info: "Manali is synonymous streams and birdsong, forests and orchards and grandees of snow-capped mountains. Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti.",
+        image: "https://manalitourplanner.com/wp-content/uploads/2023/12/What-Can-You-Explore-In-Manali-1.jpg",
+        price: "$100"
+    },
+    {
+        id: 10,
+        name: "PrayagRaj",
+        info: "Prayagraj is one of the oldest cities in India. It is crowned in ancient scriptures as 'Prayag' or 'Teertharaj' and is considered the holiest of pilgrimage centres of India. It is situated at the confluence of three rivers- Ganga, Yamuna and the invisible Saraswati.",
+        image: "https://kdhadvisor.com/wp-content/uploads/2023/08/converted_Untitled_design_17-1-1.jpg",
+        price: "$100"
     }
 ];
 

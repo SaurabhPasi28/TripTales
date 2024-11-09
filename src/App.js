@@ -8,7 +8,6 @@ function App() {
     const newTours=  tours.filter(tour=>tour.id!==id);
     settours(newTours);
   }
-  
   if(tours.length===0){
      return (
       <div className='flex flex-col justify-center gap-6 items-center w-full h-[100vh]'>
@@ -19,14 +18,14 @@ function App() {
   }
   return (
     <div className='flex flex-col items-center gap-6 h-fit bg-gray-300'>
-      <div className='text-5xl m-8 border-dashed border-4 rounded-2xl border-blue-600 p-3 px-12'>
+      <div className='text-4xl m-4 border-dashed border-4 rounded-2xl border-blue-600 p-3 px-8 sm:px-12 sm:text-5xl sm:m-8'>
         <h1>Plan with Love</h1>
       </div>
 
-      <div className='flex flex-wrap justify-evenly gap-8 w-[90%]'>
+      <div className='card flex flex-wrap justify-evenly gap-8 w-[90%]'>
         {
           tours.map((tour)=>{
-            return <TourCard tour={tour} removeTour={removeTour} />
+            return <TourCard tour={tour} removeTour={removeTour}/>
           })
         }
       </div>

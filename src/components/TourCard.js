@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function TourCard({tour,removeTour} ) {
     const [readmore,setReadmore]=useState(false);
@@ -8,9 +8,24 @@ function TourCard({tour,removeTour} ) {
         setReadmore(!readmore); 
     }
 
+    useEffect(() => {
+        const loadScrollReveal = async () => {
+          const ScrollReveal = (await import('scrollreveal')).default;
+          ScrollReveal().reveal('.card', {
+            delay: 200,
+            distance: '50px',
+            origin: 'top',
+            duration: 1000,
+            easing: 'ease-out',
+            reset: true,
+          });
+    
+        };
+        loadScrollReveal();
+      }, []);
     
   return (
-    <div className='p-2 w-80 h-fit bg-white rounded-lg transition-all border-solid border-2 hover:border-blue-600'>
+    <div className='card p-2 w-80 h-fit bg-white rounded-lg transition-all border-solid border-2 hover:border-blue-600'>
         <img className='h-[15rem] w-[100%] rounded-lg' src={tour.image} alt={tour.name}></img>
 
         <div className='p-1'>
